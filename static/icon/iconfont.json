@@ -1,0 +1,23 @@
+{
+  "id": "2201861",
+  "name": "myfonts",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16127254",
+      "name": "el-icon-top",
+      "font_class": "el-icon-top",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "16127256",
+      "name": "el-icon-bottoms",
+      "font_class": "el-icon-bottoms",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    }
+  ]
+}

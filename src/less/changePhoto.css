@@ -1,0 +1,32 @@
+.change-role {
+  width: 4rem;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  padding-top: 0.0625rem;
+  top: 0.55rem;
+  left: -2rem;
+  z-index: 99;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #162349;
+}
+.change-role li {
+  text-align: center;
+  overflow: hidden;
+  float: left;
+}
+.change-role li a {
+  color: #fff;
+  display: block;
+  font-size: 0.15rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  padding: 0 0.0625rem;
+  text-align: center;
+  width: 2rem;
+}
+.change-role li a:hover {
+  background: #31467C;
+  text-decoration: none;
+}

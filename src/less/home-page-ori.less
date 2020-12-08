@@ -1,0 +1,260 @@
+//768 992 1200
+@media screen and (max-width: 767px) {
+  font-size: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1400px) {
+  font-size: 14px;
+}
+
+@base-font: 16px;
+
+@dark-bg: #0f2252;
+@light-bg: #12265a;
+@dark-font: #cfd9f4;
+@light-font: #7888af;
+@debug-bg-color: #fff;
+
+@main-height: 42.93rem;
+@top-height: 2rem;
+@title-font-size: 1.5rem;
+@center-height: (@main-height - @top-height) * 0.618;
+@bottom-height: @main-height - @top-height - @center-height;
+@graph-height: 9rem;
+@center-left: 23rem;
+@title2-font-size: 1.1rem;
+@title-height: 1.2rem;
+@kpi-graph-height: @center-height - 5rem - .6rem;
+
+.home-page {
+  width: 100%;
+  height: @main-height;
+  background-color: @dark-bg;
+  color: #fff;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // overflow: hidden;
+
+  .home-page-box {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: @dark-bg;
+
+    //标题行
+    .home-page-header {
+      width: 100%;
+      height: @top-height;
+      font-size: @title-font-size;
+      line-height: @top-height;
+      padding-left: .7rem;
+      background-color: @light-bg;
+      // text-align: center;
+    }
+
+    //中间部分
+    .home-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: @center-height;
+      overflow: hidden;
+      padding: .2rem .5rem .2rem .5rem;
+
+      .home-container-left {
+        width: @center-left;
+        height: 100%;
+        background-color: @light-bg;
+        border: 1px #3E8DDD solid;
+        border-radius: 5px;
+
+        .home-container-left-title {
+          width: 100%;
+          font-size: @title2-font-size;
+          height: @title-height;
+          line-height: @title-height;
+          font-weight: 700;
+          padding-left: .2rem;
+        }
+
+        .home-container-left-text {
+          width: 100%;
+          height: @center-height - @graph-height - @title-height;
+          overflow: hidden;
+
+          .market-table {
+            width: 100%;
+            height: 100%;
+            font-size: .8rem;
+            line-height: 1rem;
+            margin: 2px 2px 2px 2px;
+            border-collapse: collapse;
+            text-align: center;
+
+            .colname {
+              width: 40%;
+              min-width: 10rem;
+            }
+
+            .colvalue {
+              width: 30%;
+            }
+          }
+        }
+
+        .home-container-left-graph {
+          width: 100%;
+          height: @graph-height;
+        }
+      }
+
+      .home-container-center {
+        flex: 1;
+        // width: 50%;
+        height: 100%;
+        min-width: 30rem;
+        background-color: @light-bg;
+        margin: 0 .3rem 0 .3rem;
+        border: 1px #FFE65F solid;
+        border-radius: 5px;
+
+        .home-container-center-text {
+          width: 100%;
+          height: 5rem;
+          font-size: @title2-font-size;
+          line-height: @title-height;
+        }
+
+        .home-container-center-graph {
+          // border: 1px red solid;
+          width: 100%;
+          height: @kpi-graph-height;
+          overflow: hidden;
+        }
+      }
+
+      .home-container-right {
+        width: @center-left;
+        height: 100%;
+        background-color: @light-bg;
+        border: 1px #fff solid;
+        border-radius: 5px;
+
+        .home-container-right-title {
+          width: 100%;
+          font-size: @title2-font-size;
+          height: title-height;
+          line-height: title-height;
+          font-weight: 700;
+          padding-left: .2rem;
+        }
+
+        .home-container-right-text {
+          width: 100%;
+          height: @center-height - @graph-height - @title-height;
+        }
+
+        .home-container-right-graph {
+          width: 100%;
+          height: @graph-height;
+        }
+      }
+    }
+
+    //底部
+    .home-bottom {
+      display: flex;
+      width: 100%;
+      height: @bottom-height;
+      padding: .2rem .5rem .2rem .5rem;
+      
+      .home-bottom-left {
+        flex: 1;
+        height: 100%;
+        margin-right: .1rem;
+        background-color: @light-bg;
+        border: 1px #6BAE01 solid;
+        border-radius: 5px;
+        display: flex;
+        flex-direction:column;
+
+        .home-bottom-left-title {
+          flex: 1;
+          width: 100%;
+          font-size: @title2-font-size;
+          height: title-height;
+          line-height: title-height;
+          font-weight: 700;
+          padding-left: .2rem;
+        }
+
+        .home-bottom-left-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+
+          .home-bottom-left-text {
+            width: 62%;
+            height: 100%;
+          }
+
+          .home-bottom-left-graph {
+            width: 38%;
+            height: 100%;
+          }
+        }
+      }
+
+      .home-bottom-right {
+        flex: 1;
+        margin-left: .1rem;
+        background-color: @light-bg;
+        border: 1px#E94C4C solid;
+        border-radius: 5px;
+        display: flex;
+        flex-direction:column;
+
+        .home-bottom-right-title {
+          width: 100%;
+          font-size: @title2-font-size;
+          height: title-height;
+          line-height: title-height;
+          font-weight: 700;
+          padding-left: .2rem;
+        }
+
+        .home-bottom-right-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+
+          .home-bottom-right-text {
+            width: 60%;
+            height: 100%;
+          }
+
+          .home-bottom-right-graph {
+            width: 40%;
+            height: 100%;
+            
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>2.2 Icons/Circle-Check@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M9.97238511,17.7884736 C10.2383063,18.0705088 10.6705987,18.0705088 10.9365198,17.7884736 L19.8005591,8.2607826 C20.0664803,7.98024753 20.0664803,7.51968996 19.8005591,7.23765471 L18.8364244,6.21152644 C18.5705032,5.92949119 18.1382108,5.92949119 17.8722896,6.21152644 L10.4551343,14.200025 L7.12771035,10.6115764 C6.86178917,10.3295412 6.4294968,10.3295412 6.16357562,10.6115764 L5.19944088,11.6362045 C4.93351971,11.9212402 4.93351971,12.3802975 5.19944088,12.6623328 L9.97238511,17.7884736 Z" id="path-1"></path>
+    </defs>
+    <g id="2.2-Icons/Circle-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Check-Circle" fill="#FFFFFF" xlink:href="#path-1"></use>
+    </g>
+</svg>

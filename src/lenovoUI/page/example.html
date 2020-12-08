@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+<meta http-equiv="Expires" content="0"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-control" content="no-cache"> 
+<meta http-equiv="Cache" content="no-cache"> 
+<title>tooltip sample</title> 
+</head> 
+<!-- CSS part -->
+<style>
+    .native-btn{
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #dcdfe6;
+        border-color: #dcdfe6;
+        color: #606266;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        transition: .1s;
+        font-weight: 500;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        padding: 11px 20px;
+        font-size: 16px;
+        border-radius: 0;
+    }
+    .native-btn-order-primary{
+        border-radius: 2px;
+        background-color: #465dd4;
+        color:#fff;
+        padding: 10px 12px;
+    }
+    .native-btn-order-primary:focus,.native-btn-order-primary:hover{
+        border-radius: 2px;
+        background-color: #465dd4;
+        color:#fff;
+    }
+    .native-btn div{
+        line-height: 16px;
+        overflow: hidden;
+        height: 16px;
+    }
+    .native-btn .iconfont{
+        font-size: 28px;
+        float: left;
+    }
+    .native-btn.native-btn-search .iconfont{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .native-btn.native-btn-drop .iconfont{
+        float: right;
+        line-height: 20px;
+    }
+    .native-btn.native-btn-down .iconfont{
+        float: right;
+        line-height: 18px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    @font-face {
+        font-family: loui-icon;
+        src: url(../font/iconfont.eot?v=240);
+        src: url(../font/iconfont.eot?v=240#iefix) format('embedded-opentype'), url(../font/iconfont.svg?v=240#iconfont) format('svg'), url(../font/iconfont.woff?v=240) format('woff'), url(../font/iconfont.ttf?v=240) format('truetype')
+    }
+
+    @font-face {
+        font-family: 'iconfont';
+        src: url('../font/iconfont.eot');
+        src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('../font/iconfont.woff2') format('woff2'),
+            url('../font/iconfont.woff') format('woff'),
+            url('../font/iconfont.ttf') format('truetype'),
+            url('../font/iconfont.svg#iconfont') format('svg');
+    }
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .loui-icon {
+        font-family: loui-icon !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+</style>
+
+<!-- Body part -->
+<body>
+    <button class="native-btn native-btn-order-primary"><div><i class="iconfont">&#xe7b3;</i>Settings</div></button>
+    <button class="native-btn native-btn-order-primary native-btn-search"><div><i class="iconfont">&#xe60f;</i>Search</div></button>
+    <button class="native-btn native-btn-order-primary native-btn-drop"><div>Dropdown<i class="iconfont">&#xe64a;</i></div></button>
+    <button class="native-btn native-btn-order-primary native-btn-down"><div>Download<i class="iconfont">&#xe7d9;</i></div></button>
+</body>
+<script type="text/javascript" src='../js/loui.js' charset="utf-8"></script> 
+<script>
+    /*document.getElementById("layer5").onmouseover=function () {
+        var str5 = 'Lenovo Design Team Production, wish it can help you';
+        layer.open({
+            type: 4,
+            content: [str5, '#layer5'],
+            closeBtn: 0,
+            tips: [1, '#fff'],
+            shade: 0,
+            fixed: false,
+            area: 'auto',
+            maxWidth: 300
+        });
+    };
+    document.getElementById("layer5").onmouseleave=function () {
+        layer.close(layer.index);
+    };*/
+</script>
+</html> 

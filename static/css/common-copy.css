@@ -1,0 +1,538 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-size: 12px;
+  color: #333;
+  font-family: "微软雅黑";
+  overflow: auto;
+}
+
+h2 {
+  font-size: 13px !important;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  line-height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.k-grid-header th.k-header,
+.k-grid td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.k-grid-header th.k-header,
+.k-grid td {
+  height: 12px;
+  line-height: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+/* 三级菜单颜色控制 */
+
+.el-tabs__active-bar {
+  background-color: #1589c9;
+}
+
+.el-tabs__item {
+  color: #333;
+  height: 35px;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.el-tabs__item:hover {
+  color: #333;
+  background: #f5f7f9;
+}
+
+.el-tabs__item.is-active {
+  color: #1589c9;
+}
+
+/* 订单明细 */
+
+.sodetail .el-table td {
+  padding: 3px 0;
+  text-align: center
+}
+
+.sodetail .el-table td:first-child {
+  padding: 3px 8px 3px;
+}
+
+.sodetail .el-table th {
+  padding: 3px 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center
+}
+
+.sodetail .el-table th:first-child {
+  padding: 3px 8px 3px;
+}
+
+.el-form-item__label {
+  font-size: 12px;
+  padding: 0 8px 0 0
+}
+
+.el-popper[x-placement^=bottom] {
+  margin-top: 5px
+}
+
+.el-select-dropdown__item span {
+  line-height: 16px !important;
+}
+
+.el-select-dropdown__item {
+  font-size: 12px
+}
+
+.orderQuery .el-checkbox__label {
+  padding-left: 5px;
+  font-size: 12px
+}
+
+.orderQuery .el-tag--small {
+  padding: 0
+}
+
+.orderQuery .el-select-dropdown__item {
+  font-size: 12px
+}
+
+.orderQuery .el-select__tags-text {
+  display: inline-block;
+  width: 23px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.orderQuery .k-grid-content {
+  min-height: 0px;
+  max-height: 257px;
+}
+
+/* 订单分析 */
+
+.so-box .el-form-item__label {
+  font-size: 12px;
+  padding: 0 8px 0 0
+}
+
+.so-box .el-checkbox+.el-checkbox {
+  margin-left: 13px
+}
+
+.so-box .el-radio__label {
+  font-size: 12px
+}
+
+.so-box .el-radio+.el-radio {
+  margin-left: 13px
+}
+
+.so-box .el-checkbox__label {
+  padding-left: 5px;
+  font-size: 12px
+}
+
+.so-box .el-tag--small {
+  padding: 0
+}
+
+.so-box .el-select__tags-text {
+  display: inline-block;
+  width: 24px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.so-box .el-select-dropdown__item {
+  font-size: 12px
+}
+
+/* 调整变式按钮两边距离 */
+
+.el-transfer__buttons {
+  padding: 0 5px
+}
+
+/* 订单查询展示 */
+
+.soPrio .el-step.is-vertical .el-step__line,
+.orderQuery-show .el-step.is-vertical .el-step__line {
+  left: 4px;
+}
+
+.soPrio .el-step__icon,
+.orderQuery-show .el-step__icon {
+  width: 12px;
+  display: flex;
+  height: 12px;
+  font-size: 0
+}
+
+.soPrio .el-step__title,
+.orderQuery-show .el-step__title {
+  font-size: 12px
+}
+
+.soPrio .el-step__main,
+.orderQuery-show .el-step__main {
+  position: relative
+}
+
+.soPrio .el-step__description.is-finish,
+.orderQuery-show .el-step__description.is-finish {
+  position: absolute;
+  left: -124px;
+  top: 8px
+}
+
+.k-input {
+  font-size: 12px
+}
+
+.soPrio .el-step__description.is-process,
+.orderQuery-show .el-step__description.is-process {
+  position: absolute;
+  left: -124px;
+  top: 8px
+}
+
+.soPrio .el-step__description.is-wait,
+.orderQuery-show .el-step__description.is-wait {
+  position: absolute;
+  left: -124px;
+  top: 8px
+}
+
+.soPrio .el-step:last-of-type .el-step__line,
+.orderQuery-show .el-step:last-of-type .el-step__line {
+  display: block;
+}
+
+/* 预警框公共组件样式 */
+
+.messbox .el-alert {
+  border-radius: 0px
+}
+
+.messbox .el-alert__title .is-bold {
+  font-weight: 400;
+}
+
+.messbox .el-alert__title {
+  font-size: 12px;
+  margin-left: 17px
+}
+
+/* cnb预测参数表单样式 */
+
+.waterfalls .el-input--mini .el-input__inner,
+.fastpara .el-input--mini .el-input__inner {
+  width: 132px;
+}
+
+.waterfalls .el-input--mini .el-input__inner {
+  width: 179px;
+}
+.waterfalls .el-range-editor--mini.el-input__inner {
+  width: 179px;
+}
+
+.waterfalls .el-form--inline .el-form-item,
+.fastpara .el-form--inline .el-form-item {
+  margin-right: -10px;
+}
+.el-date-editor.el-input{
+  width: 178px;
+}
+.el-range-editor--mini.el-input__inner {
+  width: 183px;
+}
+
+
+.waterfalls .el-form-item__label,
+.fastpara .el-form-item__label {
+  padding: 0 6px 0px 0px;
+}
+
+.waterfalls .el-button,
+.fastpara .el-button {
+  margin: 0px 0px 0px 13px;
+}
+
+/* .fastpara .el-select__tags-text {
+  display: inline-block;
+  width: 36px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+} */
+
+/* 全链库存 */
+
+.waterfall .el-input--mini .el-input__inner {
+  width: 100px;
+}
+
+.waterfall .cValue .el-input--mini .el-input__inner {
+  width: 190px;
+}
+
+.waterfall .el-range-editor--mini.el-input__inner {
+  width: 190px;
+}
+
+.waterfall .el-form-item__label {
+  padding: 0 6px 0px 0px;
+}
+
+/* CV查询公共组件 */
+
+.form-public .el-input--mini .el-input__inner {
+  width: 150px
+}
+
+.el-select__tags {
+  max-width: 150px !important
+}
+
+.form-public1 .el-select__tags-text,
+.form-public .el-select__tags-text {
+  display: inline-block;
+  width: 45px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.form-public1 .el-select__tags-text {
+  width: 39px;
+}
+
+.form-public1 .el-input--mini .el-input__inner {
+  width: 137px
+}
+
+/* .el-select__tags-text {
+  display: inline-block;
+  width: 40px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+} */
+
+.el-select .el-tag {
+  margin: 5px 0 0px 2px;
+}
+
+.el-tag--small {
+  padding: 0px;
+}
+
+.form-public1 .el-checkbox__label {
+  padding-left: 0;
+  font-size: 0
+}
+
+.form-public1 .el-form-item__label {
+  padding: 0 5px 0px 0px;
+}
+
+.fcst-vary .form-inline .el-input--mini .el-input__inner {
+  width: 150px
+}
+
+.fcst-commit .el-table td,
+.el-table th {
+  padding: 4px 0 !important
+}
+
+/* 预测commit表格 */
+
+.fcst-commit .el-table td,
+.el-table th {
+  padding: 0 !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 预测变化 */
+.table-box .el-table td,
+.el-table th {
+  padding: 0 !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 预测waterfall二级菜单样式设置 */
+
+.waterfalls .el-table th {
+  height: 43px;
+  color: #333;
+  padding: 0px;
+  text-align: center;
+  font-size: 12px
+}
+
+.waterfalls .el-table th:nth-child(1) {
+  background-color: #FFC000 !important
+}
+
+.waterfalls .el-table th:nth-child(3),
+.waterfalls .el-table th:nth-child(4),
+.waterfalls .el-table th:nth-child(5),
+.waterfalls .el-table th:nth-child(6),
+.waterfalls .el-table th:nth-child(7),
+.waterfalls .el-table th:nth-child(8),
+.waterfalls .el-table th:nth-child(9),
+.waterfalls .el-table th:nth-child(2) {
+  background-color: #22A4E2 !important
+}
+
+.waterfalls .el-table th:nth-child(11),
+.waterfalls .el-table th:nth-child(12),
+.waterfalls .el-table th:nth-child(13),
+.waterfalls .el-table th:nth-child(14),
+.waterfalls .el-table th:nth-child(10) {
+  background-color: #C2DF47 !important
+}
+
+.waterfalls .table2 .el-table th:nth-child(27),
+.waterfalls .table2 .el-table th:nth-child(24),
+.waterfalls .table2 .el-table th:nth-child(25),
+.waterfalls .table2 .el-table th:nth-child(26),
+.waterfalls .table2 .el-table th:nth-child(19),
+.waterfalls .table2 .el-table th:nth-child(16),
+.waterfalls .table2 .el-table th:nth-child(17),
+.waterfalls .table2 .el-table th:nth-child(18),
+.waterfalls .table2 .el-table th:nth-child(11),
+.waterfalls .table2 .el-table th:nth-child(8),
+.waterfalls .table2 .el-table th:nth-child(9),
+.waterfalls .table2 .el-table th:nth-child(10),
+.waterfalls .table2 .el-table th:nth-child(1),
+.waterfalls .table2 .el-table th:nth-child(2),
+.waterfalls .table2 .el-table th:nth-child(3) {
+  background-color: #FCC705 !important
+}
+
+.waterfalls .table2 .el-table th:nth-child(23),
+.waterfalls .table2 .el-table th:nth-child(20),
+.waterfalls .table2 .el-table th:nth-child(21),
+.waterfalls .table2 .el-table th:nth-child(22),
+.waterfalls .table2 .el-table th:nth-child(15),
+.waterfalls .table2 .el-table th:nth-child(12),
+.waterfalls .table2 .el-table th:nth-child(13),
+.waterfalls .table2 .el-table th:nth-child(14),
+.waterfalls .table2 .el-table th:nth-child(7),
+.waterfalls .table2 .el-table th:nth-child(4),
+.waterfalls .table2 .el-table th:nth-child(5),
+.waterfalls .table2 .el-table th:nth-child(6) {
+  background-color: #ffff00 !important
+}
+
+.waterfalls .el-table .cell {
+  padding: 0px;
+  font-size: 12px;
+  line-height: 14px
+}
+
+.waterfalls tbody {
+  height: 0px !important;
+}
+
+.varytable .el-table td {
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 12px
+}
+
+.waterfalls .el-table td {
+  padding: 0px;
+  text-align: center
+}
+
+.waterfalls .el-table--border td:first-child .cell,
+.waterfalls .el-table--border th:first-child .cell {
+  padding-left: 0px
+}
+
+/* 订单管理的急单管理 */
+
+.soPrio .el-input--mini .el-input__inner {
+  width: 130px;
+}
+
+.soPrio .cValue .el-input--mini .el-input__inner {
+  width: 190px;
+}
+
+.soPrio .el-range-editor--mini.el-input__inner {
+  width: 190px;
+}
+
+.soPrio .el-form-item__label {
+  padding: 0 6px 0px 0px;
+}
+
+.soPrio .el-form-item--mini .el-form-item__content,
+.soPrio .el-form-item--mini .el-form-item__label {
+  line-height: 40px;
+}
+
+/* // 查询按钮 */
+
+.el-button--mini,
+.el-button--mini.is-round {
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+.el-button--primary,
+.el-button--primary:visited {
+  background-color: #4fcef7;
+  border-color: #4fcef7;
+}
+.el-button--primary:hover,
+.el-button--primary:active{
+  background-color: #31c5f5;
+  border-color: #31c5f5;
+}

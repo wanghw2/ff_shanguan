@@ -1,0 +1,563 @@
+//背景深蓝 #0f2252
+//背景浅蓝 #12265a
+//加亮文字 #cfd9f4
+//浅文字 #7888af
+@header-bg: #0c1441;
+@dark-bg: #0f2252; //#0c1440
+@light-bg: #12265a;
+@dark-font: #cfd9f4;
+@light-font: #7888af;
+@graph-bg: #060e31;
+@kpi-bg: #0c1440;
+
+@baseFont: 80;
+@main-height: 10.155rem;
+@title-height: 0.4rem;
+@title-height2: 0.35rem;
+@space-border: 0.1rem;
+@graph-height: 1.5625rem;
+@kpi-height: 0.5625rem;
+@graph-width: 4rem;
+
+@font-size-cdata: 0.125rem;
+@font-size-ctitle: .15rem;
+@font-size-subtitle: .175rem;
+@cdata-height: 0.275rem;
+@ctitle-height: .325rem;
+@subtitle-height: .375rem;
+@centertext-height: 4rem;
+
+
+
+//常用字体 中文
+//中文：宋体，微软雅黑，华文黑体 黑体（无状态）
+//英文：helveticaarial Arial:
+// 第一类，稳定型（协调，齐全，稳定，高质）
+// 微软雅黑
+// 冬青黑体
+// 宋体
+// 华文细黑
+// 方正正中黑
+
+.home-page {
+  // max-width: 24rem;
+  // max-height: 10.275rem;
+
+  flex: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: @graph-bg;
+  font-family: "微软雅黑";
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  overflow: auto;
+
+  .home-page-box {
+    flex: 1;
+
+    background-color: @graph-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+    .home-page-top {
+      height: @title-height;
+      font-family: "helveticaarial";
+      font-size: 0.3rem;
+      line-height: @title-height;
+      padding-left: @space-border;
+      // font-weight: bold;
+      background-color: @header-bg;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .findate {
+        color: @dark-font;
+        size: "big";
+      }
+
+      .today {
+        font-size: .175rem;
+        margin-right: .2rem;
+        margin-left: .1rem;
+        color: @light-font;
+      }
+    }
+
+    .home-page-center {
+      flex: 1.8;
+      // min-width: 6rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .home-page-center-bg {
+        flex: 1;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .home-page-center-left {
+          flex: 1;
+          // min-width: 2rem;
+
+          display: flex;
+
+          .home-page-container-left {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: @light-bg;
+
+            .home-page-center-text {
+              // min-height: @centertext-height;
+              flex: 65;
+              padding-bottom: .1rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+
+              .market-box-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                dl {
+                  flex: 2;
+                  text-align: center;
+
+                  dt {
+                    font-size: @font-size-ctitle;
+                    line-height: @subtitle-height;
+                    color: @dark-font;
+                  }
+
+                  dd {
+                    color: @light-font;
+                    font-weight: lighter;
+                    font-size: @font-size-cdata;
+                    line-height: @cdata-height;
+
+                  }
+
+                  dd:nth-child(even) {
+                    background: @dark-bg;
+                  }
+                }
+
+                dl:nth-child(1) {
+                  flex: 4;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+
+            //图形
+            .home-page-center-graph-left {
+              height: @graph-height;
+              flex: 35;
+              display: flex;
+            }
+          }
+        }
+
+        .home-page-center-center {
+          flex: 1.5;
+          // min-width: 2rem;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          font-family: "helveticaarial";
+
+          .home-page-center-center-bg {
+            flex: 1;
+            background-color: @graph-bg;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .home-page-title2 {
+              background-color: @graph-bg; //@kpi-bg;
+            }
+
+            .home-page-kpi-container {
+              flex: 1;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .home-page-center-kpi-text {
+                height: 0.6rem;
+                font-size: .175rem;
+                background-color: @graph-bg;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .kpi-list-item {
+                  width: 0.725rem;
+                  height: 0.5rem;
+                  background: @kpi-bg;
+                  flex-direction: column;
+                  display: flex;
+                  color: #cbd5f3;
+                  padding-left: 5px;
+                  box-sizing: border-box;
+
+                  .item-name {
+                    height: 0.25rem;
+                    line-height: 0.25rem;
+                    font-size: 0.2rem;
+                  }
+                }
+              }
+
+              .home-page-center-kpi-graph {
+                flex: 1;
+              }
+            }
+          }
+        }
+
+        .home-page-center-right {
+          flex: 1;
+          // min-width: 2rem;
+
+          display: flex;
+
+          .home-page-container-right {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: @light-bg;
+
+            .home-page-center-text {
+              // min-height: @centertext-height;
+              flex: 65;
+              padding: 0 .1rem .1rem .1rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+
+              .promote-box-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .title {
+                  padding-left: .3rem;
+                  font-family: "helveticaarial";
+                  font-size: 0.225rem;
+                  line-height: @subtitle-height;
+                  color: @dark-font;
+                }
+
+                .promote-content-box {
+                  .two-title {
+                    padding-left: .25rem;
+                    line-height: @subtitle-height;
+                    color: @dark-font;
+                    font-size: @font-size-subtitle;
+                  }
+
+                  .content {
+                    font-size: @font-size-cdata;
+                    line-height: @ctitle-height;
+                    color: @light-font;
+                    font-weight: lighter;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .content-left {
+                      padding-left: .5rem;
+                      width: 2.5rem;
+                      text-align: left;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                    }
+
+                    .content-right {
+                      padding-right: .3rem;
+                    }
+                  }
+
+                  .content:nth-child(even) {
+                    background: @dark-bg;
+                  }
+                }
+              }
+
+            }
+
+            //图形
+            .home-page-center-graph-right {
+              height: @graph-height;
+              flex: 35;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+
+    .home-page-bottom {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .home-page-bottom-container {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .home-page-bottom-left {
+          flex: 1;
+          display: flex;
+          background-color: @dark-bg;
+
+          .home-page-container {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .home-page-bottom-content {
+              flex: 1;
+              padding-right: .1rem;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .home-page-bottom-text-left {
+                flex: 65;
+                background-color: @light-bg;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                //产品360 盒子
+                .product-box-content {
+                  padding: 0 0 0.1rem 0;
+
+                  display: flex;
+                  justify-content: space-around;
+
+                  //隔行变色
+                  dd:nth-child(even) {
+                    background-color: @dark-bg;
+                  }
+
+                  //第一列
+                  dl:nth-child(1) {
+                    // flex: 1;
+                    width: 1.6rem;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    dt {
+                      font-size: @font-size-ctitle;
+                      line-height: @ctitle-height;
+                      color: @dark-font;
+                      text-align: center;
+                    }
+
+                    dd {
+                      font-weight: lighter;
+                      font-size: @font-size-cdata;
+                      line-height: @cdata-height;
+                      color: @light-font;
+                      text-align: center;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                    }
+                  }
+
+                  //其它列
+                  dl:nth-child(n+2) {
+                    min-width: 1rem;
+                    max-width: 2rem;
+                    // flex: 1.25;
+
+                    dt {
+                      font-size: @font-size-ctitle;
+                      line-height: @ctitle-height;
+                      color: @dark-font;
+                      text-align: center;
+                    }
+
+                    dd {
+                      padding-left: 0.05rem;
+                      padding-right: 0.1rem;
+                      display: block;
+                      font-weight: lighter;
+                      font-size: @font-size-cdata;
+                      line-height: @cdata-height;
+                      height: @cdata-height;
+                      color: @light-font;
+                      text-align: left;
+
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                    }
+                  }
+                }
+              }
+
+              .home-page-bottom-graph-left {
+                width: @graph-width;
+                flex: 35;
+                background-color: @light-bg;
+              }
+
+            }
+          }
+        }
+
+        .home-page-bottom-right {
+          flex: 1;
+          display: flex;
+          background-color: @dark-bg;
+
+          .home-page-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .home-page-bottom-content {
+              flex: 1;
+              background-color: @light-bg;
+              padding-bottom: .1rem;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .home-page-bottom-text-right {
+                flex: 65;
+                color: @light-font;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .title {
+                  // padding-left: 0.1625rem;
+                  font-size: @font-size-subtitle;
+                  line-height: @subtitle-height;
+                  color: @dark-font;
+                  text-align: left;
+                }
+
+                .custom-box-content {
+                  display: flex;
+
+                  dl {
+                    flex: 1;
+                    white-space: nowrap;
+
+                    dt {
+                      max-width: 2.8rem;
+                      white-space: nowrap;
+                      color: @dark-font;
+                      font-size: @font-size-subtitle;
+                      line-height: @subtitle-height;
+                      text-align: center;
+                    }
+
+                    dd {
+                      // min-width: 1.8rem;
+                      // max-width: 2.8rem;
+                      padding: 0 .2rem 0 .2rem;
+
+                      font-weight: lighter;
+                      display: flex;
+                      justify-content: space-between;
+                      font-size: @font-size-cdata;
+                      line-height: @cdata-height;
+                      text-align: center;
+
+                    }
+                  }
+                }
+              }
+
+              .home-page-bottom-graph-right {
+                width: @graph-width;
+                flex: 35;
+                background-color: @light-bg;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-page-edge-top {
+  height: 0.1rem; //.1rem;
+  // justify-content: flex-start;
+  background-color: @graph-bg;
+}
+
+.home-page-edge-bottom {
+  height: .1rem;
+  // justify-content: flex-end;
+  background-color: @graph-bg;
+}
+
+.home-page-edge-left {
+  width: .2rem;
+  // justify-content: flex-start;
+  background-color: @graph-bg;
+}
+
+.home-page-edge-right {
+  width: .2rem;
+  // justify-content: flex-end;
+  background-color: @graph-bg;
+}
+
+//五个子标题栏
+.home-page-title2 {
+  width: 100%;
+  height: @title-height2;
+  font-family: "微软雅黑";
+  font-size: 0.25rem;
+  line-height: @title-height2;
+  // font-weight: bold;
+  background-color: @light-bg;
+  padding-left: .1rem;
+}
+
+
+
+
+// border: 1px skyblue solid;
+// border-radius: 5px;
+//background-color: pink;

@@ -1,0 +1,147 @@
+{
+  "think": {
+    "allo": {
+      "alloDataFF": ["客户编码名称对应关系"]
+    },
+    "cap": {},
+    "db": {
+      "rawData": ["LCINV", "LIPC INV", "Open PO", "DF Backlog", "Summarize"]
+    },
+    "fcst": {},
+    "inv": {},
+    "kpi": {},
+    "log": {},
+    "mtm": {
+      "mtmData": ["Family CV"],
+      "mtmSBBUpload": ["特征值", "物料特征值", "CPU标签", "显卡标签", "硬盘标签", "内存标签", "主板标签", "屏幕标签", "颜色标签", "特征标签", "Family对应关系", "Family更新", "产品细分"],
+      "mtmFamilyUpload": ["Family对应关系", "Family对应关系新增", "业务线对应关系", "业务线对应关系新增"]
+    },
+    "opt": {},
+    "po": {
+      "bsAdd": ["TP BTS新增需求", "TC T新增需求", "TC&TS GAB新增需求", "TS新增需求", "当日需求"],
+      "bsBOH": ["BS BOH Issue清单", "Think BS BOH"],
+      "bsModifyPo": ["BS 修改"],
+      "bsPendingPO": ["BS PendingPO"],
+      "buildSignal": ["Build Signal"],
+      "bsParams": ["RSD 上限", "PO 上限", "优先级规则", "PendingPO Owner信息"],
+      "npi": ["新品SS清单", "新品MTM看板", "新品Family看板"]
+    },
+    "so": {
+      "finalPSD": ["PSD汇总", "PSD缺料汇总", "Final PSD", "Final PSD 缺料信息表", "PSD Report Update"]
+    },
+    "sup": {},
+    "tar": {
+      "tarUpload": ["R 营销目标", "T CA Outlook", "T DT 营销目标", "T NB 营销目标", "营销目标和CA OL汇总"]
+    }
+  },
+  "cnb": {
+    "allo": {
+      "alloDataCuS": ["分货类型", "分货渠道占比", "管理分区"],
+      "alloDataFF": ["优先订单", "承诺订单", "冻结订单", "可分供应手工", "可分供应系统"],
+      "alloDataMO": ["分货上限", "分货节奏", "产品切换"],
+      "alloDetail": ["分货结果", "分货欠单明细"]
+    },
+    "cap": {},
+    "cusplan": {
+      "cusplan": ["提货计划 MTM", "提货计划 BP", "来单计划", "提货计划看板MTM", "提货计划看板BP", "来单计划看板"]
+    },
+    "db": {
+      "rawData": ["未清PO", "库存明细", "欠单明细", "客户细分", "欠单分析参数"],
+      "dbDaily": ["产销存", "实时统计", "后续可供", "欠单分析", "CON 欠单分析", "月结监控"]
+    },
+    "fcst": {
+      "fcstPara": ["预测", "Commit", "预测版本"]
+    },
+    "inv": {},
+    "kpi": {
+      "kpiPOPSD": ["PSD考核范围", "PSD准确率"]
+    },
+    "log": {},
+    "mtm": {
+      "mtmData": ["Family CV"],
+      "mtmSBBUpload": ["特征值", "物料特征值", "CPU标签", "显卡标签", "硬盘标签", "内存标签", "主板标签", "屏幕标签", "颜色标签", "特征标签", "Family对应关系", "Family更新", "产品细分"],
+      "mtmFamilyUpload": ["Family Tree", "Family"],
+      "plcData": ["暗送关系"]
+    },
+    "opt": {},
+    "pdt": {
+      "eol": ["LTS", "EOL"],
+      "npi": ["SOVP", "NPI计划", "NPI看板"]
+    },
+    "po": {},
+    "so": {
+      "soDetail": ["月度明细", "季度明细", "年度明细"]
+    },
+    "sup": {
+      "psd": ["psd"]
+    },
+    "tar": {
+      "tarUpload": ["目标", "5S节奏"]
+    }
+  },
+  "cdt": {
+    "allo": {
+      "alloDataCuS": ["分货类型", "分货渠道占比", "管理分区"],
+      "alloDataFF": ["优先订单", "承诺订单", "冻结订单", "可分供应手工", "可分供应系统"],
+      "alloDataMO": ["分货上限", "分货节奏", "产品切换"],
+      "alloDetail": ["分货结果", "分货欠单明细"]
+    },
+    "cap": {},
+    "cusplan": {
+      "cusplan": ["提货MTM", "提货BP", "来单计划", "计划看板MTM", "计划看板BP", "来单计划看板"]
+    },
+    "db": {
+      "rawData": ["未清PO", "库存明细", "欠单明细", "工单明细"]
+    },
+    "fcst": {},
+    "inv": {},
+    "kpi": {
+      "kpiPOPSD": ["PSD考核范围", "PSD准确率"]
+    },
+    "log": {},
+    "mtm": {
+      "mtmData": ["Family CV"],
+      "mtmSBBUpload": ["特征值", "物料特征值", "CPU标签", "显卡标签", "硬盘标签", "内存标签", "主板标签", "屏幕标签", "颜色标签", "特征标签", "Family对应关系", "Family更新", "产品细分"],
+      "mtmFamilyUpload": ["Family对应关系", "Family对应关系新增"]
+    },
+    "opt": {},
+    "pdt": {
+      "eol": ["LTS管理"],
+      "inHousemo": ["Issue Owner", "PO Dashboard"],
+      "inHousPdt": ["投产策略", "投产结果"],
+      "npi": ["EOL管理"],
+      "pdtAi": ["PO汇总明细", "PO下达明细", "Open PO 明细", "PO Release EDI", "PO Release", "PO 取消明细", "投产 Overview", "投产 PO"]
+    },
+    "po": {},
+    "so": {},
+    "sup": {
+      "psd": ["Liteon PSD", "AVC PSD", "Compal PSD", "Wistron PSD", "PSD Summary", "PSD Analysis"]
+    },
+    "tar": {
+      "tarUpload": ["营销目标", "5S节奏", "激进目标"]
+    }
+  },
+  "oper": {
+    "calendar": {
+      "caRatio": ["节奏参数", "CA节奏Q1", "CA节奏Q2", "来单节奏Q1", "来单节奏Q2", "来单节奏Q3", "来单节奏Q4", "节奏汇总"],
+      "finCalendar": ["财务目标", "工作日", "预测日历", "日历"]
+    },
+    "db":{
+      "dbDaily": ["财务日报", "欠单分析", "FF新品SS清单"]
+    },
+    "inv": {
+      "invPara": ["工厂参数", "汇率参数"],
+      "doi": ["COGS目标Q1", "COGS目标Q2", "COGS目标Q3", "COGS目标Q4", "年度COGS目标", "DOI参数", "DOI目标", "历年COGS目标", "年度DOI"]
+    },
+    "tar": {
+      "tarUpload": ["财务目标Q1", "财务目标Q2", "财务目标Q3", "财务目标Q4", "RevenueQ1", "RevenueQ2", "RevenueQ3", "RevenueQ4", "年度财务目标", "历年财务目标", "年度Revenue", "历年Revenue"]
+    }
+  },
+  "control": {},
+  "mothink": {},
+  "mocondt": {},
+  "moconnb": {},
+  "cnbconregion": {},
+  "chbconso": {},
+  "chbconsi": {}
+}
